@@ -19,7 +19,7 @@ function HeaderTop() {
 
           {/* Shipping Information */}
           <div className="text-gray-500 text-[14px]">
-            <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - ₱500
+            <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - $100
           </div>
 
           {/* Currency and Language Select */}

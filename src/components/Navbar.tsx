@@ -13,10 +13,10 @@ const Navbar = () => {
             CATEGORIES
           </Link>
           <Link className="navbar_link relative" href="#">
-            MEN'S 
+            MEN&#39;S {/* Escape single quote */}
           </Link>
           <Link className="navbar_link relative" href="#">
-            WOMAN'S 
+            WOMAN&#39;S {/* Escape single quote */}
           </Link>
           <Link className="navbar_link relative" href="#">
             JEWELRY

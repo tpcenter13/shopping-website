@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Image from 'next/image'; // Import the Image component from next/image
 
 const NewProducts = () => {
   const products = [
@@ -19,7 +22,7 @@ const NewProducts = () => {
       price: 150,
     },
     {
-      img: "product3.png",
+      img: "/product3.png",
       title: "Running Shoes",
       desc: "Lightweight shoes for all your running needs.",
       category: "Shoes",
@@ -27,7 +30,7 @@ const NewProducts = () => {
       price: 80,
     },
     {
-      img: "product4.jpg",
+      img: "/product4.jpg",
       title: "Denim Jacket",
       desc: "Classic denim jacket for a casual look.",
       category: "Apparel",
@@ -35,7 +38,7 @@ const NewProducts = () => {
       price: 50,
     },
     {
-      img: "product5.jpg",
+      img: "/product5.jpg",
       title: "Backpack",
       desc: "Spacious and durable backpack for everyday use.",
       category: "Bags",
@@ -43,7 +46,7 @@ const NewProducts = () => {
       price: 60,
     },
     {
-      img: "product6.jpg",
+      img: "/product6.jpg",
       title: "Hiking Boots",
       desc: "Rugged and comfortable boots for outdoor adventures.",
       category: "Shoes",
@@ -51,7 +54,7 @@ const NewProducts = () => {
       price: 120,
     },
     {
-      img: "product7.jpg",
+      img: "/product7.jpg",
       title: "Graphic Hoodie",
       desc: "Trendy hoodie with a unique graphic design.",
       category: "Apparel",
@@ -59,7 +62,7 @@ const NewProducts = () => {
       price: 45,
     },
     {
-      img: "product8.jpg",
+      img: "/product8.jpg",
       title: "Tote Bag",
       desc: "Eco-friendly tote bag for your daily essentials.",
       category: "Bags",
@@ -67,7 +70,7 @@ const NewProducts = () => {
       price: 25,
     },
     {
-      img: "product9.jpg",
+      img: "/product9.jpg",
       title: "Formal Shoes",
       desc: "Elegant and polished shoes for formal occasions.",
       category: "Shoes",
@@ -75,7 +78,7 @@ const NewProducts = () => {
       price: 95,
     },
     {
-      img: "product10.jpg",
+      img: "/product10.jpg",
       title: "Polo Shirt",
       desc: "Smart-casual polo shirt for any event.",
       category: "Apparel",
@@ -83,7 +86,7 @@ const NewProducts = () => {
       price: 30,
     },
     {
-      img: "product11.jpg",
+      img: "/product11.jpg",
       title: "Crossbody Bag",
       desc: "Compact and versatile crossbody bag.",
       category: "Bags",
@@ -91,7 +94,7 @@ const NewProducts = () => {
       price: 40,
     },
     {
-      img: "product12.jpg",
+      img: "/product12.jpg",
       title: "Casual Sneakers",
       desc: "Comfortable sneakers for everyday wear.",
       category: "Shoes",
@@ -111,12 +114,14 @@ const NewProducts = () => {
               key={index}
               className="border p-4 rounded-lg shadow-lg max-w-xs"
             >
-              {/* Adjusted Image with consistent size and aspect ratio */}
+              {/* Adjusted Image with next/image for better optimization */}
               <div className="relative w-full h-96 mb-4">
-                <img
+                <Image
                   src={product.img}
                   alt={product.title}
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  width={500} // Set width and height for optimization
+                  height={500}
                 />
               </div>
               <h3 className="font-medium text-lg">{product.title}</h3>

@@ -49,7 +49,7 @@ const Testimonial = () => {
     <div className="mt-14 flex justify-center px-4 md:px-8">
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-7xl">
         {/* Left section */}
-        <div className="w-full md:w-96 lg:w-[500px] h-auto md:h-[500px] mt-12">
+        <div className="w-full md:w-96 lg:w-[500px] h-auto md:h-[300px] mt-12">
           <div className="bg-nude p-10 rounded-lg shadow-2xl border-4 border-gray-50 flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-bold leading-relaxed">
               What our Clients<br />
@@ -63,7 +63,7 @@ const Testimonial = () => {
         <div className="w-full md:w-96 lg:w-[600px] h-auto md:h-[300px]">
           <div className="h-full bg-white p-8 rounded-lg shadow-2xl border-4 border-gray-50 flex flex-col">
             {/* Testimonial content */}
-            <div className="flex flex-col gap-4 mb-6">
+            <div className="flex flex-col gap-4 mb-">
               {/* Quote icon */}
               <div className="text-3xl md:text-4xl font-serif text-gray-300">"</div>
               {/* Comment */}

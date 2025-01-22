@@ -65,7 +65,7 @@ const Testimonial = () => {
             {/* Testimonial content */}
             <div className="flex flex-col gap-4 mb-4">
               {/* Quote icon */}
-              <div className="text-3xl md:text-4xl font-serif text-gray-300">"</div>
+              <div className="text-3xl md:text-4xl font-serif text-gray-300">&quot;</div>
               {/* Comment */}
               <p className="text-base md:text-lg">{testimonials[currentSlide].quote}</p>
             </div>
@@ -95,7 +95,7 @@ const Testimonial = () => {
                 </div>
 
                 {/* Navigation buttons */}
-                <div className="flex gap-2 ml-28">
+                <div className="flex gap-2 ml-4">
                   <button
                     onClick={prevSlide}
                     className="p-3 hover:bg-gray-100 rounded-full"
